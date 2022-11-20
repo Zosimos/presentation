@@ -1,0 +1,53 @@
+input{
+    margin-bottom:1rem;
+}
+select{
+    margin-bottom:1rem;
+}
+#img1{
+    margin: auto;
+    display: block;
+}
+body{
+    background-color: rgb(174, 188, 199);
+}
+h1{
+    text-align: center;
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+.error{
+    border-color: red;
+}
+
+petdiv.pet{  
+    
+    background-color: rgb(142, 95, 185);
+    float:left;
+    margin:25px;
+    border:5px solid black;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+div.container{
+    border: 10px solid rgb(83, 45, 77);
+    border-radius: 25px;
+}
+div.centerbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+a.nav-link{
+    color:black;
+    border: 4mm ridge rgba(192, 50, 220, 0.6);
+}
+/*utility classes*/
+.selected{
+    background-color: green;
+}

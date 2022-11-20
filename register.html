@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+</head>
+<body>
+    
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+      </ul>
+    
+        <h1>Posh Paws</h1>
+    
+        <img src="imgs/PoshPaws.webp" alt="Logo" id="img1">
+
+    <main>
+        <!--create the form with inputs for the next fields:
+        name, age, gender, breed, service, owner, contact-->
+            <div class="container">
+                <h2>Add a new pet</h2>
+                <input class="form-control" type="text" id="txtName" placeholder="Enter pet's name">
+                <input class="form-control" type="number" id="txtAge" placeholder="Enter pet's age">
+                <select class="form-control" id="txtGender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input class="form-control" type="text" id="txtBreed" placeholder="Enter pet's breed">
+                <select class="form-control" id="txtService">
+                    <option value="">Select an option</option>
+                    <option value="nails">💅Nails cut💅</option>
+                    <option value="vaccines">💉Vaccines💉</option>
+                    <option value="grooming">✂️Grooming✂️</option>
+                </select>
+                <input class="form-control" type="text" id="txtOwner" placeholder="Enter pet owner's name">
+                <input class="form-control" type="text" id="txtContact" placeholder="Enter contact info">
+              <div class="centerbtn">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+              </div>
+            </div>
+            <div id="pets">
+<!--pets will be displayed here-->
+
+            </div>
+            <div class="container">
+
+              <table class="table">
+                <thead>
+                  
+                  <tr>
+                    <th scope="col">Pet's Name:</th>
+                    <th scope="col">Age:</th>
+                    <th scope="col">Gender:</th>
+                    <th scope="col">Breed:</th>
+                    <th scope="col">Service:</th>
+                    <th scope="col">Owner:</th>
+                    <th scope="col">Contact:</th>
+                    
+                    <th scope="col">Remove:</th>
+                  </tr>
+                </thead>
+                <tbody id="pet-table">
+                  <input type="text" id="searchBar" placeholder="Search for pet by name">
+                  <button onclick="search()">Search</button>
+                </tbody>
+                </table> 
+
+
+            </div>
+    </main>
+    <script src="scripts/display.js"></script>
+    <script src="scripts/register.js"></script>
+    
+</body>
+</html>
